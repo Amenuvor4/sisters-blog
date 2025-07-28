@@ -28,7 +28,7 @@ export default function Landing() {
 
                 <h1 className="text-4xl lg:text-5xl font-light mb-6 leading-tight">Sharing my Lifes Beautiful Moments <em className="italic font-light">and Personal Stories</em></h1>
                 <p className="text-xl mb-8 txt-blue-100 leading-relaxed">
-                    Join me for heartfelt reflextions, authentic life updates, and thoughtful insights on the books and films that move us.
+                    Join me for heartfelt reflections, authentic life updates, and thoughtful insights on the books and films that move us.
                 </p>
 
                 {/*Call to Acion */}
@@ -135,7 +135,7 @@ export default function Landing() {
                         Subscribe
                     </Button>
                 </div>
-                <p className="text-sm text-gray-500 mt-4"> No Spam, just juthentic stories and updates</p>
+                <p className="text-sm text-gray-500 mt-4"> No Spam, just authentic stories and updates</p>
             </div>
         </div>
         {/*Footer */}
