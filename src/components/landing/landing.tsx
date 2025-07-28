@@ -1,6 +1,9 @@
+'use client'
 import React from "react"
 import HeaderComp from "../layout/header"
 import { Button } from "../ui/button"
+import Footer from "../layout/footer"
+import {Check} from "lucide-react"
 
 export default function Landing() {
 
@@ -9,40 +12,66 @@ export default function Landing() {
     return (
     
     <div className="min-h-screen bg-white">
-        <HeaderComp></HeaderComp>
-        <div className="lg:w-1/2 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white p-8
-        lg:p-16 flex flex-col justify-center">
-            <div className="max-w-lg">
-                <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Life Stories</span>
-                <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Book Reviews</span>
-                <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Film Insights</span>
-                <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Reflections</span>
-            </div>
+        <HeaderComp/>
 
-            <h1 className="text-4xl lg:text-5xl font-light mb-6 leading-tight">Sharing my Lifes Beautiful Moments <em className="italic font-light">and Personal Stories</em></h1>
-            <p className="text-xl mb-8 txt-blue-100 leading-relaxed">
-                Join me for heartfelt reflextions, authentic life updates, and thoughtful insights on the books and films that move us.
-            </p>
-
-            {/*CALL to Acion */}
-            <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="outline" className="border-white text-white" size="lg">Start Reading</Button>
-                <Button className="bg-white text-blue-600 hover:bg-blue-50" size="lg">Subscribe for updates</Button>
-            </div>
-        </div>
-
-        <div className="lg:w-1/2 bg-gray-50 flex itens-center justify-center p-8 lg:p-16">
-            <div className="max-w-md text-center">
-                {/* Placeholder for sister's photo */}
-                <div className="w-64 h-64 mx-auto mb-8 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full flex items-center justify-center shadow-xl">
-                    <div className="text-blue-600 text-6xl font-light">S</div>
+        <div className="flex flex-col lg:flex-row min-h-screen">
+            <div className="lg:w-1/2 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white p-8
+            lg:p-16 flex flex-col justify-center">
+                <div className="max-w-lg">
+                    <div className="flex flex-wrap gap-2 mb-8">
+                        <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Life Stories</span>
+                        <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Book Reviews</span>
+                        <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Film Insights</span>
+                        <span className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Reflections</span>
+                    </div>
                 </div>
 
-                {/**About preview*/}
-                <h2 className="text-2xl font-semibold text-gray-800 md-4">Hi, I'm "Your name here"</h2>
-                <p className="text-gray-600 leading-relaxed">
-                    Welcome to my corner of the internet where I share moments, stories, and discoveries that shape my everyday life.
+                <h1 className="text-4xl lg:text-5xl font-light mb-6 leading-tight">Sharing my Lifes Beautiful Moments <em className="italic font-light">and Personal Stories</em></h1>
+                <p className="text-xl mb-8 txt-blue-100 leading-relaxed">
+                    Join me for heartfelt reflextions, authentic life updates, and thoughtful insights on the books and films that move us.
                 </p>
+
+                {/*Call to Acion */}
+                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                    <Button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full font-medium">
+                        Start Reading
+                    </Button>
+                    <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-3 rounded-full bg-transparent">
+                        View All Stories
+                    </Button>
+                </div>
+
+                {/* Feature List */}
+                <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                        <Check className="w-5 h-5 text-blue-200" />
+                        <span className="text-blue-100">Weekly personal reflections and life updates</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <Check className="w-5 h-5 text-blue-200" />
+                        <span className="text-blue-100">Thoughtful book and film reviews</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <Check className="w-5 h-5 text-blue-200" />
+                        <span className="text-blue-100">Authentic storytelling and genuine connections</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div className="lg:w-1/2 bg-gray-50 flex itens-center justify-center p-8 lg:p-16">
+                <div className="max-w-md text-center">
+                    {/* Placeholder for sister's photo */}
+                    <div className="w-64 h-64 mx-auto mb-8 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full flex items-center justify-center shadow-xl">
+                        <div className="text-blue-600 text-6xl font-light">N</div>
+                    </div>
+
+                    {/**About preview*/}
+                    <h2 className="text-2xl font-semibold text-gray-800 md-4">Hi, I'm "Your name here"</h2>
+                    <p className="text-gray-600 leading-relaxed">
+                        Welcome to my corner of the internet where I share moments, stories, and discoveries that shape my everyday life.
+                    </p>
+                </div>
             </div>
          </div>
 
@@ -101,7 +130,7 @@ export default function Landing() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                    <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+                    <input type="email" placeholder="Enter your email" className="text-black flex-1 px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
                     <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                         Subscribe
                     </Button>
@@ -109,6 +138,8 @@ export default function Landing() {
                 <p className="text-sm text-gray-500 mt-4"> No Spam, just juthentic stories and updates</p>
             </div>
         </div>
+        {/*Footer */}
+        <Footer/>
     </div>
 
     )
