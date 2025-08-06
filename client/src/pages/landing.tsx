@@ -1,8 +1,8 @@
 'use client'
 import React from "react"
-import HeaderComp from "../layout/header"
-import { Button } from "../ui/button"
-import Footer from "../layout/footer"
+import HeaderComp from "../components/layout/header"
+import { Button } from "../components/ui/button"
+import Footer from "../components/layout/footer"
 import {Check} from "lucide-react"
 
 export default function Landing() {
