@@ -1,4 +1,3 @@
-'use client'
 import React from "react"
 import HeaderComp from "../components/layout/header"
 import { Button } from "../components/ui/button"
@@ -6,9 +5,6 @@ import Footer from "../components/layout/footer"
 import {Check} from "lucide-react"
 
 export default function Landing() {
-
-
-
     return (
     
     <div className="min-h-screen bg-white">
@@ -27,7 +23,7 @@ export default function Landing() {
                 </div>
 
                 <h1 className="text-4xl lg:text-5xl font-light mb-6 leading-tight">Sharing my Lifes Beautiful Moments <em className="italic font-light">and Personal Stories</em></h1>
-                <p className="text-xl mb-8 txt-blue-100 leading-relaxed">
+                <p className="text-xl mb-8 text-blue-100 leading-relaxed">
                     Join me for heartfelt reflections, authentic life updates, and thoughtful insights on the books and films that move us.
                 </p>
 
@@ -99,7 +95,7 @@ export default function Landing() {
                     {/* Thoughts and Reflections */}
                     <div className="p-6">
                         <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-                            <svg className="2-8 h-8 text-blue-600" fill="none" stroke="currectColor" viewBox="0 0 24 24">
+                            <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currectColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                         </div>
@@ -124,7 +120,7 @@ export default function Landing() {
         {/* Newsletter Section */}
         <div className="py-16 px-8 bg-gray-50">
             <div className="max-w-2xl mx-auto text-center">
-                <h2 className="text0el font-light text-gray-800 mb-4">Stay Connected</h2>
+                <h2 className="text-3xl font-light text-gray-800 mb-4">Stay Connected</h2>
                 <p className="text-lg text-gray-600 mb-8">
                     Be the first to know when I share new stories and thoughts
                 </p>
